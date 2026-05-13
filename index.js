@@ -5,7 +5,7 @@ const port = process.env.PORT || 3000;
 
 // Configuración de la conexión usando la variable de entorno DATABASE_URL
 const pool = new Pool({
-  connectionString: process.env.DATABASE_URL,
+  connectionString: process.env.BASE_URL,
   ssl: { rejectUnauthorized: false } // Obligatorio para conexiones externas en Render
 });
 
